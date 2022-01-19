@@ -53,5 +53,39 @@ console.log(`Total Belanja : ${totalBelanja}`);
 console.log(`---------------------- SOAL 3 ---------------------------------`);
 let tb = 170
 let bb = 90
+let bmi = 0
+let tinggi = 0
 
+tinggi = tb /100
+bmi = Math.round (bb / (tinggi * tinggi))
 
+console.log(`Tinggi Rhody : ${tinggi} Meter`);
+console.log(`Berat Badan Rhody : ${bb} Kg`);
+
+    if(bmi < 18.5){
+        console.log(`Rhody Kurang Gizi dengan BMI : ${bmi}`);
+    }else if(bmi >= 18.5 && bmi < 24.9){
+        console.log(`Rhody Normal dengan BMI : ${bmi}`);
+    }else if(bmi >= 25 && bmi < 29.9){
+        console.log(`Rhody Berat Lebih dengan BMI : ${bmi}`);
+    }else{(bmi >= 30)
+        console.log(`Rhody Obesitas dengan BMI : ${bmi}`);
+    }
+
+console.log(`---------------------- SOAL 4 ---------------------------------`);
+let a = 4
+let r = 1
+let n = 10
+let sn = 0
+let un = 0
+let bagi = 0
+
+for (let index = 1; index <=n; index++) {
+    let banyak = n-1
+    un += a * (r ** banyak)
+    sn += un
+    console.log(`Suku Ke-${index} = ${un}`);
+}
+console.log(`Jumlah 10 Suku Pertama = ${sn}`);
+
+console.log(`---------------------- SOAL 5 ---------------------------------`);

@@ -75,3 +75,16 @@ console.log(`Data kurang gizi : ${kurangGizi}`);
 console.log(`Data normal : ${normal}`);
 console.log(`Data berat lebih : ${beratLebih}`);
 console.log(`Data obesitas : ${obesitas}`);
+
+for (let index = 1; index <=10; index++) {
+    console.log(`Perulangan ke- ${index}`);
+    
+}
+
+function repeat(s, n){
+    var a = [];
+    while(a.length < n){
+        a.push(s);
+    }
+    return a.join('');
+}
